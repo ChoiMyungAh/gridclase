@@ -1,0 +1,21 @@
+*{box-sizing: border-box;}
+
+.contenedor{
+	background: purple;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows:  50px 50px 50px; 
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	grid-template-areas: "a a b b"
+						 "c d d d"
+						 "e e e e"
+}						
+
+div[class^="item"]{ background: pink;}
+
+.itema {grid-area: a;}
+.itemb {grid-area: b;}
+.itemc {grid-area: c;}
+.itemd {grid-area: d;}
+.iteme {grid-area: e;}
